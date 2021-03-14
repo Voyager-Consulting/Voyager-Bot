@@ -13,7 +13,12 @@ This is the Voyager LinkedIn Bot (fondly referred to as Voyabot). It automates L
 pip install -r requirements.txt
 ```
 
-3. Create a file called `parameters.py` and fill it up with the appropriate information. An example is provided below
+3. Clone the repository.
+```bash
+git clone https://github.com/rahulhayaran/voyabot.git
+```
+
+4. Create a file called `parameters.py` and fill it up with the appropriate information. An example is provided below
 ```python
 # LinkedInBot
 LINKEDIN_USERNAME = # type your LinkedIn username here in single quotes
@@ -27,7 +32,7 @@ ROCKET_GENERAL_TEMPLATE_FREQ_THRESHOLD = 0.0  # this is the minimum frequency an
 ROCKET_FIRST_AT_TEMPLATE_FREQ_THRESHOLD = 0.0  # this is the minimum frequency the 'first@firm.com' email template must have on RocketReach to be included
 ```
 
-4. Run `setup.py`. This will create a `queries.xlsx` Excel file from which you can begin entering searches.
+5. Run `setup.py`. This will create a `queries.xlsx` Excel file from which you can begin entering searches.
 ```bash
 python3 setup.py
 ```
@@ -65,7 +70,7 @@ python3 am_linkedin.py
 
 ### If you want to generate emails via RocketReach:
 
-2. Make sure you have a 'full' `results.xlsx` that have some non-generated emails (they'll be annotated with `Haven't Tried Yet :/` in the `Found Email?` column). Check to see there are no typos in their `First`, `Last`, or `Firm` columns (you can validate by going to `Link`). This information will be used to generate emails, so it's important it's all correct!
+2. Make sure you have a 'full' `results.xlsx` that has some non-generated emails (they'll be annotated with `Haven't Tried Yet :/` in the `Found Email?` column). Check to see there are no typos in their `First`, `Last`, or `Firm` columns (you can validate by going to `Link`). This information will be used to generate emails, so it's important it's all correct!
 
 3. Be sure to close `results.xlsx` after you finish checking!
 
